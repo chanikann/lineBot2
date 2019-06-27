@@ -9,7 +9,7 @@ app = Flask(__name__)
 def index():
     a=os.environ['Authorization']
     return "นางสาวชนิกานต์ บำรุงบ้าน เลขที่16 ม.4/6"
-/
+
 @app.route("/webhook", methods=['POST'])
 def webhook():
     if request.method == 'POST':
